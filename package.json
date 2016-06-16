@@ -1,0 +1,19 @@
+{
+  "name": "harry-store",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "set NODE_ENV=production && set NODE_PATH=. && node app.js"
+  },
+  "dependencies": {
+    "connect-mongo": "^1.2.0",
+    "ejs": "*",
+    "ejs-locals": "^1.0.2",
+    "express": "3.3.8",
+    "mongoose": "^4.5.0",
+    "nconf": "^0.8.4"
+  },
+  "devDependencies": {
+    "winston": "^2.2.0"
+  }
+}
