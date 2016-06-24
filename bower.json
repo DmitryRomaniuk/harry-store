@@ -1,0 +1,20 @@
+{
+  "name": "harry-store",
+  "description": "",
+  "main": "",
+  "authors": [
+    "DmitryRomaniuk <Kanumowa@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/DmitryRomaniuk/harry-store",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6"
+  }
+}

@@ -6,6 +6,7 @@
     "start": "set NODE_ENV=production && set NODE_PATH=. && node app.js"
   },
   "dependencies": {
+    "async": "^2.0.0-rc.6",
     "connect-mongo": "^1.2.0",
     "ejs": "*",
     "ejs-locals": "^1.0.2",
