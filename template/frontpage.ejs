@@ -1,4 +1,16 @@
 <% layout('layout/page') -%>
-<% block('title', 'Harry store'); -%>
-<%=data%>
-<p class="lead">Всем привет!</p>
+<% block('title', 'Harry store'); %>
+<% for (var i = 0; i < booksA.length; i++){ %>
+<ul class="row">
+    <li><img style="float:left; margin: 10px; width: 150px;height: auto" src=<%= booksA[i].image %> alt="bookimage"></li>
+    <li><span>Название:&nbsp</span><%= booksA[i].name %></li>
+    <li><span>Тип:&nbsp</span><%if ("book" === booksA[i].type) {%><span> Книга</span><%} %></li>
+    <li><span>Цена:&nbsp</span><%= booksA[i].price %>&nbspруб.</li>
+    <li><span>Рейтинг:&nbsp</span><%= booksA[i].rating %></li>
+    <li><span>В наличии:&nbsp</span><% if (booksA[i].available){%><span class="glyphicon glyphicon-ok"></span><%} else {%>
+        <span class="glyphicon glyphicon-remove"></span><%} %></li>
+    <li><span>Издательство:&nbsp</span><%= booksA[i].publisher %></li>
+    <li><span>Количество страниц:&nbsp</span><%= booksA[i].pages %></li>
+    <li><span>Описание:&nbsp</span><%= booksA[i].description %></li>
+</ul>
+<% } %>
