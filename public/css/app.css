@@ -2,6 +2,15 @@ ul {
     list-style-type: none;
 }
 
-.btn_filtr {
+.btn_filtr, .btn_submit {
      width: 100%;
+}
+
+.btn_submit, .btn_submit:hover, .btn_submit:active {
+    background-color: green;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }

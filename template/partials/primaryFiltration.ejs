@@ -1,24 +1,32 @@
+<form name="essenseform" onsubmit="ModelFilter__parseForm();">
 <ul>
     <li>
-        <button type="button" class="btn btn-primary btn_filtr" data-toggle="button" aria-pressed="false">
+        <button type="button" class="btn btn-primary btn_filtr" data-toggle="button" aria-pressed="false" id="sort_btn_book">
         Книги
         </button>
     </li>
     <li>
-        <button type="button" class="btn btn-primary btn_filtr" data-toggle="button" aria-pressed="false">
+        <button type="button" class="btn btn-primary btn_filtr" data-toggle="button" aria-pressed="false" id="sort_btn_toy">
         Игрушки
         </button>
     </li>
     <li>Цена <br>
         <div class="input-group">
-            <input type="text" class="form-control" placeholder="Цена от...">
-            <input type="text" class="form-control" placeholder="Цена до...">
+            <input type="number" class="form-control" placeholder="Цена от..." name="price_from">
+            <input type="number" class="form-control" placeholder="Цена до..." name="price_to">
         </div>
     </li>
     <li>Год выпуска <br>
         <div class="input-group">
-            <input type="text" class="form-control" placeholder="Год от...">
-            <input type="text" class="form-control" placeholder="Год до...">
+            <input type="number" class="form-control" placeholder="1900..." name="year_from">
+            <input type="number" class="form-control" placeholder="...<%=new Date().getFullYear()%>" name="year_to">
         </div>
     </li>
+    <br>
+    <li>
+        <button type="submit" class="btn btn-primary btn_submit">
+            Показать
+        </button>
+    </li>
 </ul>
+</form>

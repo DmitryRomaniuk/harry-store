@@ -1,5 +1,6 @@
 <% layout('layout/page') -%>
 <% block('title', 'Harry store'); %>
+<div id="IPlace"></div>
 <% for (var i = 0; i < booksA.length; i++){ %>
 <ul class="row">
     <li><img style="float:left; margin: 10px; width: 150px;height: auto" src=<%= booksA[i].image %> alt="bookimage"></li>
@@ -14,3 +15,4 @@
     <li><span>Описание:&nbsp</span><%= booksA[i].description %></li>
 </ul>
 <% } %>
+<script src="/js/frontpage_front.js"></script>
