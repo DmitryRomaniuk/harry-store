@@ -2,7 +2,8 @@
   {
     "name": "Гарри Поттер и философский камень",
     "type": "book",
-    "price": "178000",
+    "price": "17.80",
+    "year": "2001",
     "rating": "4.5",
     "available": true,
     "publisher": "Махаон",
@@ -13,7 +14,8 @@
   {
     "name": "Гарри Поттер и Тайная комната",
     "type": "book",
-    "price": "178300",
+    "price": "17.83",
+    "year": "2002",
     "rating": "4.2",
     "available": true,
     "publisher": "Махаон",
@@ -24,7 +26,8 @@
   {
     "name": "Гарри Поттер и узник Азкабана",
     "type": "book",
-    "price": "178500",
+    "price": "17.85",
+    "year": "2003",
     "rating": "4.1",
     "available": true,
     "publisher": "Махаон",
@@ -35,7 +38,8 @@
   {
     "name": "Гарри Поттер и Кубок огня",
     "type": "book",
-    "price": "193200",
+    "price": "19.32",
+    "year": "2003",
     "rating": "4.8",
     "available": true,
     "publisher": "Махаон",
@@ -46,7 +50,8 @@
   {
     "name": "Гарри Поттер и Орден Феникса",
     "type": "book",
-    "price": "209200",
+    "price": "20.92",
+    "year": "2005",
     "rating": "4.0",
     "available": true,
     "publisher": "Махаон",
@@ -57,7 +62,8 @@
   {
     "name": "Гарри Поттер и Принц-полукровка",
     "type": "book",
-    "price": "199200",
+    "price": "19.92",
+    "year": "2006",
     "rating": "4.2",
     "available": true,
     "publisher": "Махаон",
@@ -68,7 +74,8 @@
   {
     "name": "Гарри Поттер и Дары Смерти",
     "type": "book",
-    "price": "193200",
+    "price": "19.32",
+    "year": "2007",
     "rating": "5.0",
     "available": true,
     "publisher": "Махаон",

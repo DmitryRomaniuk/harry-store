@@ -1,32 +1,35 @@
 <form name="essenseform" onsubmit="ModelFilter__parseForm();">
-<ul>
-    <li>
-        <button type="button" class="btn btn-primary btn_filtr" data-toggle="button" aria-pressed="false" id="sort_btn_book">
-        Книги
-        </button>
-    </li>
-    <li>
-        <button type="button" class="btn btn-primary btn_filtr" data-toggle="button" aria-pressed="false" id="sort_btn_toy">
-        Игрушки
-        </button>
-    </li>
-    <li>Цена <br>
-        <div class="input-group">
-            <input type="number" class="form-control" placeholder="Цена от..." name="price_from">
-            <input type="number" class="form-control" placeholder="Цена до..." name="price_to">
+    <ul>
+        <li>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" id="sort_btn_book" name="sort_btn_book">Книги
+                </label>
+            </div>
+        </li>
+        <li>
+            <div class="checkbox">
+                <label>
+                    <span><input type="checkbox" id="sort_btn_toy" name="sort_btn_toy">Игрушки</span>
+                </label>
+            </div>
+        </li>
+        <div class="form-group">
+            <label class="control-label" for="inputDefault">Цена</label>
+            <input type="number" step="0.01" class="form-control" placeholder="Цена от..." name="price_from">
+            <input type="number" step="0.01" class="form-control" placeholder="Цена до..." name="price_to">
         </div>
-    </li>
-    <li>Год выпуска <br>
-        <div class="input-group">
-            <input type="number" class="form-control" placeholder="1900..." name="year_from">
-            <input type="number" class="form-control" placeholder="...<%=new Date().getFullYear()%>" name="year_to">
+        <div class="form-group">
+            <label class="control-label" for="inputDefault">Год выпуска</label>
+            <input type="number" step="0.01" class="form-control" placeholder="1900..." name="year_from">
+            <input type="number" step="0.01" class="form-control" placeholder="...<%= new Date().getFullYear() %>"
+                   name="year_to">
         </div>
-    </li>
-    <br>
-    <li>
-        <button type="submit" class="btn btn-primary btn_submit">
-            Показать
-        </button>
-    </li>
-</ul>
+        <br>
+        <div>
+            <button type="submit" class="btn btn-primary btn_submit">
+                Показать
+            </button>
+        </div>
+    </ul>
 </form>
