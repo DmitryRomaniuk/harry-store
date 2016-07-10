@@ -1,3 +1,5 @@
+
+
 ul {
     list-style-type: none;
 }
@@ -21,6 +23,8 @@ div.checkbox label{
     display: block;
     width: 100%;
     line-height: 40px;
+    border-radius: 5px;
+    color: white;
 }
 div.checkbox label input {
     margin-top: 14px;
@@ -32,4 +36,50 @@ div.checkbox {
 
 form input {
     margin-top: 5px;
+}
+
+form ul {
+    padding: 0px;
+}
+
+footer {
+    text-align: center;
+}
+
+.one-element-of-list:hover {
+    border-radius: 5px;
+    border: 0px solid black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+
+.form-only-available span {
+    position: relative;
+    font-weight: normal;
+    cursor: pointer;
+}
+.form-only-available input {
+    position: relative;
+    top: 2px;
+}
+
+.hidden-sort {
+    display: block;
+}
+@media (max-width: 768px) {
+    .hidden-sort {
+        display: none;
+    }
+}
+.hidden_sort_click {
+    cursor: pointer;
+    background-color: #00b3ee;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    color: white;
+}
+nav .form-control {
+    margin-top: 0px;
 }

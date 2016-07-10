@@ -1,15 +1,13 @@
 'use strict';
 function ModelFilter__parseForm() {
-    try {
-        /*$.ajax("/",
-            {type: 'GET', dataType: 'html', success: DataLoaded, error: ErrorHandler}
-        );*/
-        console.log(1)
-    }
-    catch (e) {
-        console.log(e)
-    }
+    return false
 }
+
+$(".hidden_sort_click").click(function () {
+    $(".hidden-sort").toggle("slow")
+});
+$("ul.nav").removeClass("active");
+$(".front_page_nav").addClass("active");
 /*
 function DataLoaded(data)
 {

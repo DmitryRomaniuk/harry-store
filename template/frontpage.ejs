@@ -1,22 +1,43 @@
 <% layout('layout/page') -%>
 <% block('title', 'Harry store'); %>
-<div id="IPlace"></div>
-<% for (var i = 0; i < booksA.length; i++){
-    if (sort_by_form.price_from<=booksA[i].price&&booksA[i].price<=sort_by_form.price_to&&
-        sort_by_form.year_from<=booksA[i].year&&booksA[i].year<=sort_by_form.year_to) {
-%>
-<ul class="row">
-    <li><img style="float:left; margin: 10px; width: 150px;height: auto" src=<%= booksA[i].image %> alt="bookimage"></li>
-    <li><span>Название:&nbsp</span><%= booksA[i].name %></li>
-    <li><span>Тип:&nbsp</span><%if ("book" === booksA[i].type) {%><span> Книга</span><%} %></li>
-    <li><span>Цена:&nbsp</span><%= booksA[i].price %>&nbspруб.</li>
-    <li><span>Год выпуска:&nbsp</span><%= booksA[i].year %>&nbspг.</li>
-    <li><span>Рейтинг:&nbsp</span><%= booksA[i].rating %></li>
-    <li><span>В наличии:&nbsp</span><% if (booksA[i].available){%><span class="glyphicon glyphicon-ok"></span><%} else {%>
-        <span class="glyphicon glyphicon-remove"></span><%} %></li>
-    <li><span>Издательство:&nbsp</span><%= booksA[i].publisher %></li>
-    <li><span>Количество страниц:&nbsp</span><%= booksA[i].pages %></li>
-    <li><span>Описание:&nbsp</span><%= booksA[i].description %></li>
-</ul>
-<% }} %>
+
+<section class="container">
+    <aside class="col-lg-2 col-md-2 col-sm-2 col-sm-12">
+        <button class="btn btn-primary btn_submit hidden_sort_click hidden-lg hidden-md hidden-sm">Нажмите для
+            сортировки
+        </button>
+        <div class="hidden-sort"><%- partial('./partials/primaryFiltration') %></div>
+    </aside>
+    <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+        <div id="IPlace"></div>
+        <% for (var i = 0; i < booksA.length; i++){
+        if (sort_by_form.price_from <= booksA[i].price && booksA[i].price <= sort_by_form.price_to &&
+                sort_by_form.year_from <= booksA[i].year && booksA[i].year <= sort_by_form.year_to) {
+        %>
+        <ul class="row one-element-of-list">
+            <li><img style="float:left; margin: 10px; width: 150px;height: auto"
+                     src=<%= booksA[i].image %> alt="bookimage"></li>
+            <li><span>Название:&nbsp</span><%= booksA[i].name %></li>
+            <li><span>Тип:&nbsp</span>
+                <% if ("book" === booksA[i].type) { %>
+                <span> Книга</span>
+                <% } %>
+            </li>
+            <li><span>Цена:&nbsp</span><%= booksA[i].price %>&nbspруб.</li>
+            <li><span>Год выпуска:&nbsp</span><%= booksA[i].year %>&nbspг.</li>
+            <li><span>Рейтинг:&nbsp</span><%= booksA[i].rating %></li>
+            <li><span>В наличии:&nbsp</span>
+                <% if (booksA[i].available){ %>
+                <span class="glyphicon glyphicon-ok"></span>
+                <% } else { %>
+                <span class="glyphicon glyphicon-remove"></span>
+                <% } %>
+            </li>
+            <li><span>Издательство:&nbsp</span><%= booksA[i].publisher %></li>
+            <li><span>Количество страниц:&nbsp</span><%= booksA[i].pages %></li>
+            <li><span>Описание:&nbsp</span><%= booksA[i].description %></li>
+        </ul>
+        <% }} %>
+    </div>
+</section>
 <script src="/js/frontpage_front.js"></script>

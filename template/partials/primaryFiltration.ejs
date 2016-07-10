@@ -1,4 +1,4 @@
-<form name="essenseform" onsubmit="ModelFilter__parseForm();">
+<form name="essenseform" onsubmit="ModelFilter__parseForm()">
     <ul>
         <li>
             <div class="checkbox">
@@ -25,7 +25,16 @@
             <input type="number" step="0.01" class="form-control" placeholder="...<%= new Date().getFullYear() %>"
                    name="year_to">
         </div>
+        <div class="form-only-available">
+            <span><b>Показать только в наличии</b></span>
+            <li>
+                <label>
+                    <span><input type="checkbox" id="only_available" name="only_available">&nbspТолько в наличии</span>
+                </label>
+            </li>
+        </div>
         <br>
+
         <div>
             <button type="submit" class="btn btn-primary btn_submit">
                 Показать

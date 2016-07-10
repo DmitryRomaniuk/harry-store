@@ -2,42 +2,32 @@
 <html>
 
 <head>
-  <title>
-    <%=blocks.title%>
-  </title>
+    <title>
+        <%= blocks.title %>
+    </title>
 
-  <link rel="stylesheet" href="/css/bootstrap.css" />
-  <link rel="stylesheet" href="/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="/css/app.css" />
+    <link rel="stylesheet" href="/css/bootstrap.css"/>
+    <link rel="stylesheet" href="/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/css/app.css"/>
 
-  <script src="/js/jquery.js"></script>
-  <script src="/js/bootstrap.js"></script>
+    <script src="/js/jquery.js"></script>
+    <script src="/js/bootstrap.js"></script>
 </head>
 
 <body>
 
-  <div class="navbar navbar-default">
-    <div class="container">
-      <%-partial('../partials/topNavigation')%>
-    </div>
-  </div>
+<%- partial('../partials/topNavigation') %>
 
-  <header>
-    <%-blocks.header%>
-  </header>
+<header>
+    <%- blocks.header %>
+</header>
 
-  <section class="container">
-    <aside class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-      <%-partial('../partials/primaryFiltration')%>
-    </aside>
-    <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
-      <%-body -%>
-    </div>
-  </section>
+<%- body -%>
 
-  <footer class="container">
-    <%-partial('../partials/footer')%>
-  </footer>
+
+<footer class="container">
+    <%- partial('../partials/footer') %>
+</footer>
 
 </body>
 
